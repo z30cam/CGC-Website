@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Abhaya Libre", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    }
+
+h2 {
+        font-family: "Geologica", sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        color: black;
+        text-decoration: none;
+        text-transform: none;
+        padding-bottom: 20px;
+        border-bottom-width: 1px;
+        border-bottom: black;
+}    
+
+h4 {
+            font-family: "Abhaya Libre", sans-serif;
+            font-weight: normal;
+            font-size: 26px;
+            color: white;
+            text-decoration: none;
+            text-transform: none;
+            padding-bottom: 20px;
+    }
+
+li, a, button {
+    font-family: "Geologica", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: all 0.3s ease 0s;
+}
+
+.logo {
+    cursor: pointer;
+    max-height: 150px;
+
+}
+
+.nav_links {
+    list-style: none; 
+    text-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.booknow {
+    text-align: center;
+    padding: 10px 25px;
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+}
+
+.booknow:hover {
+    transform: scale(1.1)
+}
+
+.membershub {
+    text-align: center;
+    padding: 10px 25px;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+}
+
+.membershub:hover {
+    transform: scale(1.1)
+}
+
+.thecourse {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+}
+
+.thecourse:hover {
+    transform: scale(1.1);
+}
+
+.joinus {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);    
+}
+
+.joinus:hover {
+    transform: scale(1.1)
+}
+
+.blackbutton {
+    color: black!important;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.buttondiv {
+    display: grid;
+    grid-gap: 10px;
+}
+.hero-image {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: opacity 2s ease;
+  background-color: black;
+  overflow: hidden; /* Hide content that exceeds the height */
+}
+  
+  .fade-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease;
+    background-color: black; /* Set the background color to black */
+  }
+  
+    .fade-image.active {
+    opacity: 1;
+  }
+
+  .hero-text {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    font-family: "Geologica", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+    z-index: 1;
+  }
+
+  .inlineblock {
+    display: inline-block;
+  }
+
+  .twitter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 15%;
+    padding-bottom: 20px;
+  }
+
+  .twitter-container {
+    text-align: center;
+  }
+  
+  .twitter-button {
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  
+  .twitter-modal {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .close-button:hover {
+    color: red;
+  }
+  
+  .twitter-timeline {
+    margin-top: 20px;
+  }
+
+   #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+  }
+
+  #twitter-spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    z-index: 5;
+  }
+  
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  .section {
+    display: flex;
+    height: 30vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+  }
+
+  .blacktext {
+    color: black!important;
+  }
+
+.aboutheader {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  
+  .form-wrapper {
+    flex: 1;
+    padding-right: 20px;
+
+    
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #707070;
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  .form-group input[type="submit"] {
+    font-family: "Geologica", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);   
+  }
+  
+  .form-group input[type="submit"]:hover {
+    transform: scale(1.1) 
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    padding: 20px 15%;
+    justify-content: space-between;
+  }
+  
+  .footerlogo {
+    max-height: 80px;
+  }
+
+  /* Solid border */
+hr.solid {
+    border-top: 2px solid red;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .section {
+        height: 60vh;
+      }
+    
+    .hidden {
+        display: none;
+    }
+    .footer {
+        flex-direction: column;
+    }
+
+    .form-group input[type="submit"] {
+        font-size: 16px;
+    }
+}
+    
+    
