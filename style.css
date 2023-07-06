@@ -197,6 +197,7 @@ button {
   background-color: black;
   overflow: hidden; /* Hide content that exceeds the height */
 }
+
   
   .fade-image {
     position: absolute;
@@ -465,4 +466,49 @@ hr.solid {
     }
 }
     
-    
+.protext {
+    text-align: center;
+    position: relative;
+    font-family: "Geologica", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.meetthepro {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: opacity 2s ease;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden; /* Hide content that exceeds the height */
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.proimagecontainer {
+  background-image: url(./images/darren2.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.staticheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  transition: all 0.3s ease 0s;
+}
