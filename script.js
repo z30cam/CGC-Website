@@ -1,12 +1,4 @@
 
-// JavaScript code to change the header background color on scroll
-window.addEventListener('scroll', function() {
-  var header = document.getElementById('header');
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var maxScroll = document.documentElement.scrollHeight - window.innerHeight; // Maximum scroll position
-  var opacity = Math.min(scrollTop / maxScroll, 0.5); // Adjust the opacity factor as desired
-  header.style.backgroundColor = 'rgba(0, 0, 0, ' + opacity + ')';
-});
 
 // JavaScript code for fade transition between hero images
 window.addEventListener('DOMContentLoaded', function() {
@@ -44,41 +36,6 @@ window.addEventListener('DOMContentLoaded', function() {
   
     startImageSlider();
   });
-
-  // JavaScript code for fade transition between hero images
-window.addEventListener('DOMContentLoaded', function() {
-  var images = [
-    './images/proshop.jpg',
-    './images/proshop1.jpg',
-    './images/proshop2.jpg',
-  ];
-
-  var currentIndex = 0;
-  var prevIndex = images.length - 1;
-  var initialDelay = 3000; // Delay for the initial image in milliseconds
-
-  function fadeInNextImage() {
-    var nextIndex = (currentIndex + 1) % images.length;
-
-    var currentImage = document.getElementById('proshopimage-' + currentIndex);
-    var nextImage = document.getElementById('proshopimage-' + nextIndex);
-
-    currentImage.classList.remove('active');
-    nextImage.classList.add('active');
-
-    currentIndex = nextIndex;
-    prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-  }
-
-  function startImageSlider() {
-    setTimeout(function() {
-      fadeInNextImage();
-      setInterval(fadeInNextImage, 5000); // Change image every 5 seconds
-    }, initialDelay);
-  }
-
-  startImageSlider();
-});
 
   const openButton = document.querySelector('.twitter-button');
   const overlay = document.getElementById('overlay');
