@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+  background-color: white!important;
+}
 
 p {
     font-family: "Abhaya Libre", sans-serif;
@@ -12,7 +15,7 @@ p {
     text-decoration: none;
     text-transform: none;
     line-height: 1.5;
-    text-align: center;
+    text-align: justify;
 }
 
 h1 {
@@ -33,6 +36,7 @@ h2 {
         padding-bottom: 20px;
         border-bottom-width: 1px;
         border-bottom: black;
+        letter-spacing: 2px;
 }    
 
 h4 {
@@ -59,7 +63,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20%;
+    padding: 1% 10%;
     background-color: rgb(255, 255, 255);
     position: relative;
     width: 100%;
@@ -198,8 +202,8 @@ button {
   }
 
   .hero-text {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: center;
     position: relative;
     font-family: "Geologica", sans-serif;
@@ -313,8 +317,8 @@ button {
   .section {
     display: flex;
     height: 30vh;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     align-items: center;
   }
 
@@ -408,7 +412,7 @@ button {
   .footer {
     display: flex;
     align-items: center;
-    padding: 20px 20%;
+    padding: 1% 10%;
     justify-content: space-between;
   }
   
@@ -466,15 +470,14 @@ hr.solid {
   background-size: cover;
   position: relative;
   transition: opacity 2s ease;
-  background-color: #f2f2f2;
   overflow: hidden; /* Hide content that exceeds the height */
   display: flex;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
   justify-content: center;
   align-items: center;
-padding-top: 20px;
-padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .coaching {
@@ -484,11 +487,10 @@ padding-bottom: 20px;
   background-size: cover;
   position: relative;
   transition: opacity 2s ease;
-  background-color: #f2f2f2;
   overflow: hidden; /* Hide content that exceeds the height */
   display: flex;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
   justify-content: center;
   align-items: center;
 padding-top: 20px;
@@ -501,25 +503,87 @@ flex-direction: row-reverse;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 20px;
 }
 
 .shopimagecontainer {
-  background-image: url(./images/proshop.jpg);
+  background-image: url(./images/Darren3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 20px;
 }
 
 .staticheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20%;
-  background-color: #f2f2f2;
+  padding: 1% 10%;
   position: relative;
   width: 100%;
   z-index: 3;
   transition: all 0.3s ease 0s;
 }
+
+.companylogos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clogo {
+  height: 75px;
+}
+
+.imagemenu {
+  display: flex;
+  padding: 1% 10%;
+  justify-content: space-between;
+  height: 60vh;
+}
+
+.imagesection1 {
+width: 25%;
+background-image: url(./images/mainimage.jpg);
+background-position: center;
+background-size: cover;
+margin: 1%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.imagesection2 {
+  width: 25%;
+  background-image: url(./images/mainimage1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 1%;
+  display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+  }
+  
+.imagesection3 {
+  width: 25%;
+  background-image: url(./images/mainimage2.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 1%;
+  display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+  }
+  
+.imagesection4 {
+  width: 25%;
+  background-image: url(./images/mainimage3.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 1%;
+  display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+  }
